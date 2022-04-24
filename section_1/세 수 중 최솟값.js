@@ -13,13 +13,11 @@ function solution(a, b, c) {
         answer = a;
     }
 
-    if(b>c) {
+    if(answer > c) {
         answer = c;
-    } else {
-        answeer = b;
     }
 
     console.log(answer);
 }
 
-solution(1,99,3);
+solution(20, -30, -50);
