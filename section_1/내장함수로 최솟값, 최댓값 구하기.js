@@ -4,11 +4,11 @@ function solution(arr){
     // Math.min : 최솟값을 구함
     // Math.max : 최댓값을 구함
     let min = Math.min(...arr);
-    let min_apply = Math.min.apply(null, arr)
+    let min_apply = Math.min.apply(null, arr);
     let max = Math.max(...arr);
-    let max_apply = Math.max.apply(null, arr)
+    let max_apply = Math.max.apply(null, arr);
 
-    let answer = `${min}, ${min_apply}, ${max}, ${max_apply}`
+    let answer = `${min}, ${min_apply}, ${max}, ${max_apply}`;
     
     return answer;
 }
