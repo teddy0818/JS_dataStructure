@@ -16,6 +16,10 @@ let arr=[5, 7, 1, 3, 2, 9, 11];
 console.log(solution(arr));
 
 /* 
+
+Number.MAX_SAFE_INTEGER - 숫자 중 최댓값
+
+*/
 /* 
 
      function solution(arr){         
