@@ -20,6 +20,7 @@ console.log(solution(str));
 /*
     <Tip>
 
+    - 반복문 for ... of ... 활용할것
 
 
 */
@@ -27,7 +28,7 @@ console.log(solution(str));
 
 /*
     <답안>
-    
+
          function solution(s){
                 let answer="";
                 for(let x of s){
