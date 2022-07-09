@@ -24,7 +24,7 @@ console.log(solution('COMPUTERPROGRAMMING', 'R'));
     <답안>
 
        function solution(s, t){
-            let answer = s.spilt(t);
+            let answer = s.spilt(t).length - 1;
             return answer;
         }
             
