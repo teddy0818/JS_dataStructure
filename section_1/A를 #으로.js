@@ -20,7 +20,7 @@ console.log(solution(str));
 /*
     <Tip>
 
-    - 반복문 for ... of ... 활용할것
+    - 정규식 활용
 
 
 */
@@ -30,11 +30,8 @@ console.log(solution(str));
     <답안>
 
          function solution(s){
-                let answer="";
-                for(let x of s){
-                    if(x=='A') answer+='#';
-                    else answer+=x;
-                }
+                let answer = s;
+                answer = answer.replace(/A/g, '#');
                 return answer;
             }
             
