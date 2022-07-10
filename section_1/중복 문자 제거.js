@@ -1,0 +1,38 @@
+
+function solution(str){         
+    let answer = '';
+
+    for (let val of str) {
+        if(answer.indexOf(val) == -1) {
+            answer += val;
+        }
+    }
+
+    return answer;
+}
+
+console.log(solution('ksekkset'));
+
+
+/*
+    <Tip>
+    
+
+*/
+    
+
+/*
+    <답안>
+
+     function solution(s){  
+        let answer="";
+        //console.log(s.indexOf("K"));
+        for(let i=0; i<s.length; i++){
+            //console.log(s[i], i, s.indexOf(s[i]));
+            if(s.indexOf(s[i])===i) answer+=s[i];
+        }
+        return answer;
+    }
+    console.log(solution("ksekkset"));
+
+*/
