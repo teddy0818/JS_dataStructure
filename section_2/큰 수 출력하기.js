@@ -16,7 +16,7 @@ function solution(arr){
 }
 
 console.log(solution([7, 3, 9 ,5 ,6, 12]));
-
+asd
 
 /*
     <Tip>
