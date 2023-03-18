@@ -17,6 +17,8 @@ function solution(A, B){
             } else {
                 answer++;
             }
+
+        // X 일때 
         } else if(val == 0) {
             combo = 0;
         }
