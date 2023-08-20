@@ -35,7 +35,6 @@ function solution(arr) {
                 right = arr[i][j+1]
             }
             
-
             // 만약 숫자가 상하좌우 중 제일 크다면
             if(arr[i][j] > top && arr[i][j] > bottom && arr[i][j] > left && arr[i][j] > right) {
                 answer++;
@@ -74,7 +73,9 @@ console.log(solution(arr));
                     for(let j=0; j<n; j++){
                         let flag=1;
                         for(let k=0; k<4; k++){
+                            // 행좌표
                             let nx=i+dx[k];
+                            // 열좌표
                             let ny=j+dy[k];
                             if(nx>=0 && nx<n && ny>=0 && ny<n && arr[nx][ny]>=arr[i][j]){
                                 flag=0;
