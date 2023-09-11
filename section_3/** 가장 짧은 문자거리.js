@@ -46,8 +46,6 @@ console.log(solution(s, t));
 
 /*
     <Tip>
-
-  
    
 */
     
