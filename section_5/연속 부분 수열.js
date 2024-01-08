@@ -1,5 +1,8 @@
 
 function solution(n, m, arr) {
+    // 다시 풀기
+
+    /*
     let answer = 0;
     let sum = 0;
     let p1 = 0;
@@ -20,7 +23,26 @@ function solution(n, m, arr) {
             p2 = p1;
         }
     }
+    */
 
+    let answer = 0;
+    let sum = 0;
+    let lt = 0;
+
+    for(let rt=0; rt<n; rt++) {
+        sum += arr[rt];
+        if(sum==m) {
+            answer++;
+        }
+        while(sum>=m) {
+            sum -= arr[lt++];
+            if(sum==m) {
+                answer++;
+            }
+        }
+    }
+
+    
     return answer;
 }
 
