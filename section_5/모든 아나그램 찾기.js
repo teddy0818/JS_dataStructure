@@ -17,7 +17,7 @@ function solution(input1, input2) {
     for (let j = i; j < i + input2.length; j++) {
       str += input1[j];
     }
-    console.log("str : " + str);
+    // console.log("str : " + str);
 
     let aMap = new Map();
     for (let k = 0; k < str.length; k++) {
@@ -39,6 +39,7 @@ function solution(input1, input2) {
       }
     }
     if (isConsistence) {
+      console.log("str : " + str);
       answer++;
     }
   }
