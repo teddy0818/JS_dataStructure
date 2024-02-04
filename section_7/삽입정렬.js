@@ -1,14 +1,15 @@
 function solution(arr) {
   for (let i = 0; i < arr.length; i++) {
     let temp = arr[i];
-    for (let j = i - 1; j >= 0; j--) {
+    let j;
+    for (j = i - 1; j >= 0; j--) {
       if (temp < arr[j]) {
         arr[j + 1] = arr[j];
       } else {
         break;
       }
-      arr[j + 1] = temp;
     }
+    arr[j + 1] = temp;
   }
 
   console.log(arr);
@@ -16,7 +17,7 @@ function solution(arr) {
   return arr;
 }
 
-console.log(solution([8, 5, 6, 2, 4]));
+console.log(solution([11, 7, 5, 6, 10, 9]));
 
 /*
         <Tip>
@@ -26,6 +27,20 @@ console.log(solution([8, 5, 6, 2, 4]));
 
 /*
         <정답> 
-       
+       function solution(arr){
+          let answer=arr;
+          for(let i=0; i<arr.length; i++){
+              let tmp=arr[i], j;
+              for(j=i-1; j>=0; j--){
+                  if(arr[j]>tmp) arr[j+1]=arr[j];
+                  else break;
+              }
+              arr[j+1]=tmp;
+          } 
+          return answer;
+      }
+
+      let arr=[11, 7, 5, 6, 10, 9];
+      console.log(solution(arr));
 
     */
